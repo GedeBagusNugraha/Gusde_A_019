@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Aritmatika</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="bckgrnd">
+        <h1>Perhitungan Aritmatika</h1>
+        <p>Nama  : Gede Bagus Nugraha</p>
+        <p>NIM   : 2215101019</p>
+        <p>Kelas : A</p>
+    </div>
+    <div class="container">
+        <h1>Perhitungan Deret Fibonacci</h1>
+        <label for="n">Masukkan jumlah angka Fibonacci yang ingin dihitung:</label>
+        <input type="number"placeholder="angka" id="n" min="1">
+        <button onclick="hitungFibonacci()">Hitung</button>
+        <p>Hasil:</p>
+        <div id="hasil"></div>
+    </div>
+    
+    <div class="container">
+        <h1>Perhitungan Volume Bangun Ruang</h1>
+        <label for="jenis">Pilih bentuk :</label><br>
+        <select id="jenis">
+            <option value="kubus">Kubus</option>
+            <option value="balok">Balok</option>
+            <option value="bola">Bola</option>
+            <option value="kerucut">Kerucut</option>
+        </select><br>
+        <label for="sisi">Masukkan angka(cm):</label>
+        <input type="number"placeholder="Sisi" id="sisi" min="1">
+        <input type="number"placeholder="Panjang" id="panjang" min="1" style="display:none;">
+        <input type="number"placeholder="Lebar" id="lebar" min="1" style="display:none;">
+        <input type="number"placeholder="Tinggi" id="tinggi" min="1" style="display:none;">
+        <input type="number"placeholder="Jari-Jari" id="jarijari" min="1" style="display:none;">
+        <button onclick="hitungVolume()">Hitung</button>
+        <p>Hasil:</p>
+        <div id="hasil1"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
